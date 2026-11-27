@@ -1,0 +1,32 @@
+name: Bug in the game
+description: Something broke or looks wrong while playing
+labels: ["bug"]
+body:
+  - type: input
+    id: build
+    attributes:
+      label: Build number
+      description: On the title screen, in the pause menu or in Settings.
+      placeholder: "2660"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: One or two sentences. A screenshot helps (paste it here).
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we see it too?
+      description: What you were doing just before. Which car, where, day or night.
+  - type: dropdown
+    id: often
+    attributes:
+      label: How often?
+      options:
+        - Every time
+        - Sometimes
+        - Once
